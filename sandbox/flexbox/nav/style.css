@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+}
+
+.logo-span{
+    color: #3F72AF;
+}
+
+.navbar {
+    display: flex;
+    background-color: #1E2022;
+}
+
+.nav-logo {
+    flex: 1;
+    padding: 0.5rem;
+    color: #F0F5F9;
+    font-size: 42px;
+}
+
+.nav-links {
+    flex: 1;
+    padding: 1rem;
+}
+
+.contact {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.contact button:hover{
+    opacity: 0.7;
+    background-image: linear-gradient(to right top, #00326d, #2c528c, #4c73ac, #6d96cc, #90bbec);
+    transition: 0.5s ease;
+}
+
+.contact button {
+    background-color: linear-gradient(red, yellow);
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    color: #F9F7F7;
+    cursor: pointer;
+    font-size: 20px;
+    background-image: linear-gradient(to right top, #90bbec, #6d96cc, #4c73ac, #2c528c, #00326d);
+    border: none;
+}
+
+.nav-links ul{
+    display: flex;
+    height: 100%;
+    padding-right: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F0F5F9;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    border-bottom: #3F72AF solid 2px;
+    color: #3F72AF;
+    opacity: 0.9;
+}
+
