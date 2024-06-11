@@ -55,10 +55,15 @@ header a {
     font-size: 48px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .hero-main {
     margin: 5rem 0 4rem;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     
 }
@@ -130,14 +135,16 @@ header a {
 
 .quote-section {
     display: flex;
-    flex-direction: column;
-    background-color: #DBE2EF;
+    justify-content: center;
+    background-color: #E5E7EB;
     padding: 50px 200px;
     color: #000;
 }
 
-.quote-text #quote {
+.quote-text {
+    max-width: 1400px;
     font-size: 36px;
+    color: #1F2937;
     font-style: italic;
     font-weight: lighter;
 }
@@ -155,31 +162,46 @@ header a {
     padding: 100px 200px;   
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F7F7;
+}
+
 .sign-up {
-    background-color: #3F72AF;
+    background-color: #3882f6;
     color: #F9F7F7;
     display: flex;
-    padding: 32px 42px; 
+    justify-content: space-between;
+    padding: 2rem 6rem; 
     border-radius: 5px;
     gap: 32px;
+    width: 1000px;
+}
+
+.signup-text{
+    display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.sign-up a {
+.sign-button a {
     text-decoration: none;
 }
 
-.sign-up button {
-    cursor: pointer;
-    color: #112D4E;
-    background-color: #F9F7F7;
-    padding: 12px 36px;
+.sign-button {
+    background-color: #3882f6;
+    text-decoration: none;
+    color: #F9F7F7;
+    border: 2px solid #F9F7F7;
     border-radius: 5px;
-    border: none;
-    font-size: 18px;
+    padding: 1rem 4rem;
+}
+
+.sign-button a {
     text-decoration: none;
 }
+
 
 .sign-up button:hover {
     opacity: 0.6;
